@@ -1,0 +1,8 @@
+# Print all directory in current path containing "x"
+find . -type d -name "x" -print
+
+# Zip/compress all directory and it's subfolder & content in current path containing "x"
+find . -type d -name "x" -exec zip -r {}.zip {} \;
+
+# Remove all directory recursively in current path containing "x"
+find . -type d -name "x" -exec rm -rf {} \;
